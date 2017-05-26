@@ -1,0 +1,13 @@
+<main>
+    <div class="wrapper">
+        <!-- toastr container -->
+        <toaster-container></toaster-container>
+
+        <!-- Loading spinner -->
+        <div class="ui inverted dimmer" [ngClass]="{'active':showSpinner}">
+            <div class="ui text large loader">Loading...</div>
+        </div>
+
+        <router-outlet></router-outlet>
+    </div>
+</main>
